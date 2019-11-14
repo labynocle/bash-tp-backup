@@ -29,3 +29,4 @@ un container qui contiendra les outils pour l'exercice
 
 * [étape 0: vérifier que tous les requis sont bien là](./tp/step_0-check.md)
 * [étape 1: faire un script qui dump une base de données](./tp/step_1-dump_db.md)
+* [étape 2: ajouter des logs](./tp/step_2-log.md)
