@@ -31,3 +31,6 @@ un container qui contiendra les outils pour l'exercice
 * [étape 1: faire un script qui dump une base de données](./tp/step_1-dump_db.md)
 * [étape 2: ajouter des logs](./tp/step_2-log.md)
 * [étape 3: ajouter des tests](./tp/step_3-test.md)
+* [étape 4: archivage et chiffrement](./tp/step_4-archive.md)
+* [étape 5: création d'un script de restore](./tp/step_5-restore.md)
+* [étape bonus: toujours plus?](./tp/step_bonus.md)
