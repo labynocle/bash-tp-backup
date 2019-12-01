@@ -18,6 +18,8 @@ La commande devra générer `/data/backup/mysql_db-20191114.tar.gz` qui sera l'a
 
 Mettez à jour votre script pour que si tout se passe bien, votre script de backup ne génère que l'archive (c'est à dire qu'on ne veut avoir que `/data/backup/mysql_db-20191114.tar.gz` à la fin).
 
+:information_source: inspirez vous de l'article suivant pour manipuler `tar`: [La commande TAR](http://debian-facile.org/doc:systeme:tar)
+
 :warning: pour vérifier que vous avez bien réussi à archiver correctement, il sera impératif de trouver aussi le moyen d'ouvrir une archive `tar.gz`.
 
 
@@ -61,7 +63,7 @@ Vous devez être en mesure:
 
 Question bonus:
 * Que pensez vous de la façon dont la commande `gpg` est appelée? (par rapport au mot de passe)
-* Savez vous parcourir une archive sans pour autant l'ouvrir?
+* Savez vous parcourir une archive sans pour autant l'ouvrir? Pourquoi ça peut être intéressant de savoir faire ça?
 
 
 ## La suite
