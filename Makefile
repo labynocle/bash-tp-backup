@@ -58,4 +58,9 @@ tp-container-inside: ## Enter in the specified container (with var CONTAINER)
 tp-initdb: ## Init the database
 	@docker exec -i docker_bash_1 mysql -uroot -pmySecretPassWord -h mysql < ./docker/bash/sql/exemple01.sql
 	@docker exec -i docker_bash_1 mysql -uroot -pmySecretPassWord -h mysql < ./docker/bash/sql/exemple02.sql
-	@echo "Import done !!"
+	@echo "Import databases done !!"
+
+tp-dropdb: ## Drop the database
+	@docker exec -i docker_bash_1 mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple01;"
+	@docker exec -i docker_bash_1 mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple01;"
+	@echo "Drop databases done !!"

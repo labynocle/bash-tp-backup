@@ -23,7 +23,9 @@ Le script devra être appelé sur ce modèle:
 
 Le script devra:
 * déchiffrer automatiquement le fichier gpg (on suppose que vous connaissez déjà le password)
-* ouvrir l'archive `tar.gz` et restorer chaque fichier `.sql` contenu
+* ouvrir l'archive `tar.gz` et restorer chaque fichier `.sql` contenu (il faut que le fichier `exemple01.sql` restore la base `exemple01`)
+
+:information_source: Utilisez la commande `make tp-dropdb` pour supprimer les bases de données `exemple*` et vous pouvez vérifier qu'elles ont bien disparu avec la commande du début du TP: `mysql -uroot -pmySecretPassWord -h mysql -e "show databases;"`
 
 :information_source: Pour restorer un fichier `sql`, vous pouvez vous inspirer de [cet article](https://www.memoinfo.fr/tutoriels-linux/guide-sauvegarde-restauration-mysql/).
 
