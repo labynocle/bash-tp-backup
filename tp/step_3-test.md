@@ -14,13 +14,15 @@ L'objectif de cette étape est d'améliorer le script avec des tests.
 Il existe une variable spéciale `$?` qui permet de savoir si une commande s'est bien passée, comme le montre l'exemple suivant:
 
 ```
-$ ls /tmpazeaze > /dev/null 2>&1; echo $?
+$ ls /tmpazeaze         # <<<<<<< une commande qui échoue
+$ echo $?               # <<<<<<< on affiche le code status de la commande précédente
 2
-$ ls /tmp > /dev/null 2>&1; echo $?
+$ ls /tmp               # <<<<<<< une commande qui réussit
+$ echo $?               # <<<<<<< on affiche le code status de la commande précédente
 0
 ```
 
-`0` signifie que la commande s'est bien passée et toute autre valeur doit être interprétée comme un fail.
+`0` signifie que la commande précédente s'est bien passée et toute autre valeur doit être interprétée comme un fail.
 
 Ajouter après la commande de `mysqldump`, un test pour stopper le script si la commande se passe pas bien.
 
