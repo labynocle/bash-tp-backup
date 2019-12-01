@@ -54,6 +54,8 @@ Les dumps seront avec les paths suivants: `/data/backup/mysql_db-20191114/exempl
 
 :information_source: [Comment récupérer le résultat d'une commande dans une variable](https://www.commentcamarche.net/faq/5030-comment-recuperer-le-resultat-d-une-commande-dans-une-variable)
 
+:information_source: Pour avoir des exemples pratiques de la commande `date`, n'hésitez pas à lire ce blog post avec plein d'exemples: [How To Format Date For Display or Use In a Shell Script](https://www.cyberciti.biz/faq/linux-unix-formatting-dates-for-display/).
+
 
 ## Confirmation
 
