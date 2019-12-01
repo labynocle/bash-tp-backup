@@ -39,3 +39,8 @@ Appelez votre chargé de TP pour confirmer que vous êtes prêt à attaquer la s
 Vous devez être en mesure:
 * d'utiliser des conditions dans vos scripts bash
 * de tester les codes retour des fonctions
+
+
+## La suite
+
+Vous pouvez passer à la suite: [étape 4: archivage et chiffrement](./step_4-archive.md)

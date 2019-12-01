@@ -51,4 +51,9 @@ Vous devez être en mesure:
 
 
 Question bonus:
-* Savez vous ajouter de la couleur dans vos logs? (cf: [les codes de couleurs en bash](http://www.tux-planet.fr/les-codes-de-couleurs-en-bash/)) 
+* Savez vous ajouter de la couleur dans vos logs? (cf: [les codes de couleurs en bash](http://www.tux-planet.fr/les-codes-de-couleurs-en-bash/))
+
+
+## La suite
+
+Vous pouvez passer à la suite: [étape 3: ajouter des tests](./step_3-test.md)

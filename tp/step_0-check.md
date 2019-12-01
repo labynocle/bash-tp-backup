@@ -112,3 +112,8 @@ Vous devez être en mesure de montrer:
 
 Question bonus:
 * que pouvez vous dire des droits de `./docker/bash/scripts/hello_world.sh` ?
+
+
+## La suite
+
+Vous pouvez passer à la suite: [étape 1: faire un script qui dump une base de données](./step_1-dump_db.md)

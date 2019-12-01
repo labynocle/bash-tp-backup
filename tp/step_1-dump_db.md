@@ -66,3 +66,8 @@ Vous devez être en mesure:
 * d'utiliser une boucle `for` dans vos scripts
 * d'utiliser la commande `date`
 * de récupérer le résultat d'une commande dans une variable `bash`
+
+
+## La suite
+
+Vous pouvez passer à la suite: [étape 2: ajouter des logs](./step_2-log.md)

@@ -46,3 +46,8 @@ Vous devez être en mesure:
 Question bonus:
 * Ajouter un maximum de tests: est ce que le fichier `gpg` passé en paramètre existe, etc... soyez inventifs!)
 * Utiliser [getopts](https://www.journaldunet.fr/web-tech/developpement/1202855-comment-utiliser-la-commande-getopts-en-bash/) pour une meilleure gestion des paramètres
+
+
+## La suite
+
+Vous pouvez passer à la suite: [étape bonus: toujours plus?](./step_bonus.md)

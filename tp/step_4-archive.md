@@ -62,3 +62,8 @@ Vous devez être en mesure:
 Question bonus:
 * Que pensez vous de la façon dont la commande `gpg` est appelée? (par rapport au mot de passe)
 * Savez vous parcourir une archive sans pour autant l'ouvrir?
+
+
+## La suite
+
+Vous pouvez passer à la suite: [étape 5: création d'un script de restore](./step_5-restore.md)
