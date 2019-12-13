@@ -3,7 +3,7 @@
 
 SHELL                      = /bin/bash
 
-CONTAINER = docker_bash_1
+CONTAINER = bash
 
 
 ################################################################################
@@ -43,7 +43,7 @@ tp-stop: ## Stop the TP's stack
 	docker-compose \
 		down
 
-tp-clean: tp-stop ## Build the the TP's docker images
+tp-clean: tp-stop ## Remove the the TP's docker images
 	@cd docker && \
 	docker-compose \
 		rm \
@@ -56,11 +56,11 @@ tp-container-inside: ## Enter in the specified container (with var CONTAINER)
 	@docker exec -it ${CONTAINER} bash
 
 tp-initdb: ## Init the database
-	@docker exec -i docker_bash_1 mysql -uroot -pmySecretPassWord -h mysql < ./docker/bash/sql/exemple01.sql
-	@docker exec -i docker_bash_1 mysql -uroot -pmySecretPassWord -h mysql < ./docker/bash/sql/exemple02.sql
+	@docker exec -i bash mysql -uroot -pmySecretPassWord -h mysql < ./docker/bash/sql/exemple01.sql
+	@docker exec -i bash mysql -uroot -pmySecretPassWord -h mysql < ./docker/bash/sql/exemple02.sql
 	@echo "Import databases done !!"
 
 tp-dropdb: ## Drop the database
-	@docker exec -i docker_bash_1 mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple01;"
-	@docker exec -i docker_bash_1 mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple01;"
+	@docker exec -i bash mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple01;"
+	@docker exec -i bash mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple01;"
 	@echo "Drop databases done !!"

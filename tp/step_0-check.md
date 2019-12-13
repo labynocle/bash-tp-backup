@@ -45,16 +45,16 @@ En lançant la commande `docker ps`, vous pouvez constater les containers demarr
 ```
 $ docker ps
 CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                              NAMES
-18b07b2dc8c3        docker_bash                   "tail -f /dev/null"      4 seconds ago       Up 3 seconds                                           docker_bash_1
-615a2bb500fc        mysql:5.7.28                  "docker-entrypoint..."   5 seconds ago       Up 4 seconds        3306/tcp, 33060/tcp                docker_mysql_1
+18b07b2dc8c3        docker_bash                   "tail -f /dev/null"      4 seconds ago       Up 3 seconds                                           bash
+615a2bb500fc        mysql:5.7.28                  "docker-entrypoint..."   5 seconds ago       Up 4 seconds        3306/tcp, 33060/tcp                mysql
 ```
 
 Le but du TP n'étant pas la manipulation de `docker`, nous avons créé un goal du `Makefile`, vous permettant de lancer un script défini dans `./docker/bash/scripts/`:
 
 ```
-make tp-script CONTAINER=docker_bash_1 SCRIPT=hello_world.sh
+make tp-script CONTAINER=bash SCRIPT=hello_world.sh
 
-# par defaut la valeur de CONTAINER est docker_bash_1, la commande suivante est donc la même:
+# par defaut la valeur de CONTAINER est bash, la commande suivante est donc la même:
 make tp-script SCRIPT=hello_world.sh
 ```
 
@@ -77,9 +77,9 @@ Pour cela il faut depuis le container `bash` tenter de se connecter à la base d
 Pour entrer dans un container, il y a aussi un goal du `Makefile` pour ça:
 
 ```
-make tp-container-inside CONTAINER=docker_bash_1
+make tp-container-inside CONTAINER=bash
 
-# par defaut la valeur de CONTAINER est docker_bash_1, la commande suivante est donc la même:
+# par defaut la valeur de CONTAINER est bash, la commande suivante est donc la même:
 make tp-container-inside
 ```
 

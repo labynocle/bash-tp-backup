@@ -1,15 +1,20 @@
-mysql:
-  image: mysql:5.7.28
-  expose:
-    - "3306"
-  environment:
-    - MYSQL_ROOT_PASSWORD=mySecretPassWord
+version: "2.1"
 
-bash:
-  build: bash/
-  command: tail -f /dev/null
-  volumes:
-    - ./bash/scripts/:/data/
-    - ./bash/sql/:/data-sql/
-  links:
-    - mysql
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:5.7.28
+    expose:
+      - "3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=mySecretPassWord
+
+  bash:
+    container_name: bash
+    build: bash/
+    command: tail -f /dev/null
+    volumes:
+      - ./bash/scripts/:/data/
+      - ./bash/sql/:/data-sql/
+    links:
+      - mysql
