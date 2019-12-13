@@ -19,7 +19,7 @@ Pour les besoins de l'exercice, nous allons avoir aussi besoin de `docker-compos
 
 ## Architecture
 
-![TP schema](./images/bash-tp-infra.png)
+![TP schema](https://go.gliffy.com/go/share/image/s2ur1f0tgt2ndn3w6bxb.png?utm_medium=live-embed&utm_source=custom)
 
 un container MySQL avec les bases de données qu'on souhaite sauvegarder
 un container qui contiendra les outils pour l'exercice
