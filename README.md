@@ -21,8 +21,18 @@ Pour les besoins de l'exercice, nous allons avoir aussi besoin de `docker-compos
 
 ![TP schema](https://go.gliffy.com/go/share/image/s2ur1f0tgt2ndn3w6bxb.png?utm_medium=live-embed&utm_source=custom)
 
-un container MySQL avec les bases de données qu'on souhaite sauvegarder
-un container qui contiendra les outils pour l'exercice
+* un container MySQL avec les bases de données qu'on souhaite sauvegarder
+* un container qui contiendra les outils pour l'exercice
+
+Notez sur le schéma le lien qu'il y a entre le répertoire `./bash/scripts` de votre machine et le répertoire `/data` du container bash.
+
+Ce lien permet de partager le contenu de votre machine dans un containers (on parle de [`bind volumes`](https://docs.docker.com/storage/bind-mounts/)).
+Par nature les containers sont isolés, ils ne voient rien de la machine surlaquelle ils sont lancés.
+Les `bind volumes` vont vous permettre de pouvoir créer des scripts sur votre machine qui seront disponibles dans votre container.
+Tout ce que vous allez créer dans `./bash/scripts` sera accessible dans le `/data` du container.
+
+Les `bind volumes` sont aussi une méthode de persister les données d'un container car les containers sont volatiles.
+C'est à dire qu'une fois un container terminé et détruit l'ensemble de ses données sont perdues.
 
 
 ## TP - Exercices
