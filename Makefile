@@ -62,5 +62,5 @@ tp-initdb: ## Init the database
 
 tp-dropdb: ## Drop the database
 	@docker exec -i bash mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple01;"
-	@docker exec -i bash mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple01;"
+	@docker exec -i bash mysql -uroot -pmySecretPassWord -h mysql -e "drop database exemple02;"
 	@echo "Drop databases done !!"
